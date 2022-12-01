@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:background="@drawable/arrow_back_icon"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonPlastic2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPlastic2"
+        android:layout_width="281dp"
+        android:layout_height="124dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:background="@color/light_green"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/plastic" />
+
+    <Button
+        android:id="@+id/buttonReciclar"
+        android:layout_width="314dp"
+        android:layout_height="99dp"
+        android:drawableEnd="@drawable/ic_baseline_change_circle_24"
+        android:outlineSpotShadowColor="@color/dark_green"
+        android:text="Reciclar"
+        android:textSize="80px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="415dp"
+        android:layout_height="388dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454">
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editPeso"
+                android:layout_width="373dp"
+                android:layout_height="70dp"
+                android:autoSizeMinTextSize="48dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_money"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Peso KG"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="80px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editPreco"
+                android:layout_width="373dp"
+                android:layout_height="70dp"
+                android:autoSizeMinTextSize="48dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_money"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Preço"
+                android:inputType="none"                android:editable="false"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="80px" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="309dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_baseline_calculate_24"
+            android:outlineSpotShadowColor="@color/dark_green"
+            android:text="Calcular"
+            android:textSize="80px" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146784272737",
+    "project_id": "aplicativo-reciclagem",
+    "storage_bucket": "aplicativo-reciclagem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146784272737:android:d3b9437374e19f5dce8520",
+        "android_client_info": {
+          "package_name": "com.example.aplicativoreciclagem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146784272737-rmdq3dq8l36sqfs1pb1ch34qr6qqdbcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPEoOuelQDq8xLknFoOnrc63pS0ZeeHrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146784272737-rmdq3dq8l36sqfs1pb1ch34qr6qqdbcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
