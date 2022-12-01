@@ -1,1 +1,1 @@
-Mobile app for Studies
+Mobile app
